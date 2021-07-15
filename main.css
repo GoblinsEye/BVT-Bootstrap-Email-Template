@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(231, 224, 215);
+}
+
+.my-container {
+    background-color: rgb(231, 224, 215);
+}
+
+.main-row {
+padding: 1.4em;
+}
+
+.welcome-column {
+    background-color: rgb(66, 59, 52);
+    color: white;
+    /* min-width: 140px; */
+}
+
+.btn-warning {
+    color: white;
+    margin: 2em;
+}
+
+.email-list-column {
+    background-color: rgb(240, 240, 235);
+
+}
+
+.email-content-column {
+    background-color: white;
+
+}
