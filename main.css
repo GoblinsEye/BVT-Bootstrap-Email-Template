@@ -1,32 +1,60 @@
-body {
-    background-color: rgb(231, 224, 215);
-}
 
 .my-container {
     background-color: rgb(231, 224, 215);
+    height: 100vh;
+
+    
 }
 
-.main-row {
-padding: 1.4em;
+.greetings-head {
+    text-justify: center;
+}
+
+#profile-pic {
+    width: 100px;
+}
+
+.welcome-links {
+    color: white;
+   
 }
 
 .welcome-column {
     background-color: rgb(66, 59, 52);
     color: white;
-    /* min-width: 140px; */
+    padding-top: 1em;
+    
+   
 }
 
-.btn-warning {
+#compose-button {
+    width: 60%;
     color: white;
-    margin: 2em;
+    margin-top: 2em;
+    padding: .6em;
+    width: 120px;
 }
 
 .email-list-column {
     background-color: rgb(240, 240, 235);
+    padding-top: 1em;
+    height:100vh;
+}
+
+.email-card {
+    background-color: rgb(240, 240, 235);
+    /* 
+    height: 100vh;
+ */
 
 }
 
+.card:hover {
+    background-color: white;
+    box-shadow: rgb(66, 59, 52);
+}
 .email-content-column {
     background-color: white;
+    padding-top: 1em;
 
 }

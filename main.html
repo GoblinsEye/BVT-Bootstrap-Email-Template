@@ -17,18 +17,53 @@
     <div class="container-fluid my-container">
         <div class="row main-row">
             <!-- weclcome  Dwight column -->
-            <div class="col-md-2 welcome-column d-flex flex-column justify-content-center">
-                <h3>Greetings King Dwight</h3>
-                <button type="button" class="btn btn-warning">COMPOSE</button>
+            <div class="col-12 col-md-2 welcome-column d-flex flex-column justify-content-center align-items-center">
+                <img src="./images/profile-pic.png" id="profile-pic">
+                <h3 class="greetings-head">Greetings <br> King Dwight</h3>
+                <button type="button" id="compose-button" class="btn btn-warning">COMPOSE</button>
                 <br>
+                <div class="col-12 welcome-column d-flex justify-content-start">
+                    <ul class="welcome-links">
+                        <li><a href="#" class="welcome-links"><strong>Inbox (1)</strong></a></li>
+                        <li><a href="#" class="welcome-links">Tagged</a></li>
+                        <li><a href="#" class="welcome-links">Important</a></li>
+                        <li><a href="#" class="welcome-links">Sent Mail</a></li>
+                        <li><a href="#" class="welcome-links">Draft</a></li>
+                        <li><a href="#" class="welcome-links">Trash</a></li>
+                    </ul>
+                </div>
 
             </div>
             <!-- email list column -->
-            <div class="col-md-3 email-list-column d-flex flex-column">
-                Today's emails
+            <div class="col-12 col-md-3 email-list-column d-flex flex-column">
+                <input type="text" placeholder="Search Emails">
+                <div class="card email-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">LinkedIn</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">You have no new contact requests</h6>
+                    </div>
+                </div>
+                <div class="card email-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    </div>
+                </div>
+                <div class="card email-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    </div>
+                </div>
+                <div class="card email-card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    </div>
+                </div>
             </div>
             <!-- email content column -->
-            <div class="col-md-7 email-content-column">
+            <div class="col-12 col-md-7 email-content-column">
                 From Jim: <br>
                 Please stop accusing me of taking your stapler. I saw it in your drawer.
             </div>
