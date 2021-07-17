@@ -17,12 +17,12 @@
     <div class="container-fluid my-container">
         <div class="row main-row">
             <!-- weclcome  Dwight column -->
-            <div class="col-12 col-md-2 welcome-column d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-lg-2 col-md-3 welcome-column d-flex flex-column align-items-center">
                 <img src="./images/profile-pic.png" id="profile-pic">
                 <h3 class="greetings-head">Greetings <br> King Dwight</h3>
                 <button type="button" id="compose-button" class="btn btn-warning">COMPOSE</button>
                 <br>
-                <div class="col-12 welcome-column d-flex justify-content-start">
+                <div class="col-12 welcome-column2">
                     <ul class="welcome-links">
                         <li><a href="#" class="welcome-links"><strong>Inbox (1)</strong></a></li>
                         <li><a href="#" class="welcome-links">Tagged</a></li>
@@ -35,40 +35,143 @@
 
             </div>
             <!-- email list column -->
-            <div class="col-12 col-md-3 email-list-column d-flex flex-column">
-                <input type="text" placeholder="Search Emails">
-                <div class="card email-card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">LinkedIn</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">You have no new contact requests</h6>
+            <div class="col-12 col-lg-3 col-md-4 email-list-column d-flex flex-column">
+                <input class="search-emails" type="text" placeholder="Search Emails">
+                <a style="display: block" href="#">
+                    <div class="card linkedin-header" href="#">
+                        <div class="card-body">
+                            <div class="email-header">
+                                <div>
+                                    <h5 class="card-title linkedin-card">LinkedIn (support@linkedin.com)</h5>
+                                </div>
+                                <div>
+                                    <h5 class="card-title linkedin-card">Today 2:01pm</h5>
+                                </div>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted linkedin-card">You have no new contact requests.
+                                Current contacts online 0/1
+                            </h6>
+                        </div>
                     </div>
-                </div>
-                <div class="card email-card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                </a>
+                <a style="display: block" href="#">
+                    <div class="card email-card">
+                        <div class="card-body">
+                            <div class="email-header">
+                                <div>
+                                    <h5>Jim (jim>dwight@dundermifflin.com)</h5>
+                                </div>
+                                <div>
+                                    <h5>Today 8:50am</h5>
+                                </div>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">Please stop accusing me of taking your stapler. I
+                                saw
+                                it in your drawer. ps: Did you bring Jello for lunch yesterday?</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="card email-card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                </a>
+                <a style="display: block" href="#">
+                    <div class="card email-card">
+                        <div class="card-body">
+                            <div class="email-header">
+                                <div>
+                                    <h5>Beet Prices Quarterly (legalteam@beetpq.org)</h5>
+                                </div>
+                                <div>
+                                    <h5>Yesterday 8:03am</h5>
+                                </div>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">Dear Mr. Schrute, you continue to contact us about
+                                "certifying (your) beets as the best tasting ever." We do not perform this service.
+                                Please
+                                cease and desist all contact with our HR department about this matter and pay us the
+                                $203.22
+                                you still owe for back orders or we will be forced to close your already delinquent
+                                account.
+                                </your>
+                            </h6>
+                        </div>
                     </div>
-                </div>
-                <div class="card email-card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                </a>
+                <a style="display: block" href="#">
+                    <div class="card email-card mscott-email">
+                        <div class="card-body">
+                            <div class="email-header">
+                                <div>
+                                    <h5>autoresponse from mscott@dundermifflin.com</h5>
+                                </div>
+                                <div>
+                                    <h5>Friday 5:03pm</h5>
+                                </div>
+                            </div>
+                            <h6 class="card-subtitle mb-2 text-muted">Dwight, I am not currently sitting in my chair so
+                                am
+                                unable to response to your email. Better luck next time. <br> From the office chair of
+                                Michael
+                                Scott, Current and Former Branch Manager at Dunder Mifflin. <br> <em>qutoed text
+                                    below:</em>
+                            </h6>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- email content column -->
-            <div class="col-12 col-md-7 email-content-column">
-                From Jim: <br>
-                Please stop accusing me of taking your stapler. I saw it in your drawer.
+            <div class="col-12 col-lg-7 col-md-5 email-content-column">
+                <div class="email-content-header">
+                    <div>
+                        <h4>autoresponse from mscott@dundermifflin.com</h4>
+                    </div>
+                    <div>
+                        <h4>Friday July 2nd, 2021</h4>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    Dwight, I am not currently sitting in my chair so am
+                    unable to response to your email. Better luck next time. <br> From the office chair of
+                    Michael
+                    Scott, Current and Former Branch Manager at Dunder Mifflin. <br> <br> <em>quoted text below:</em>
+                    <br>
+                    <br>
+                    <br>
+                    <em>
+                        Original message sent Monday June 28, 2021
+                        <br>
+                        From: DSchrute@dundermifflin.com
+                        <br>
+                        To: mscott@dundermifflin.com
+                        <br>
+                        <br>
+                        Michael, I insist that you reprimand Jim. He keeps taking my stapler after I explicitly tell him
+                        not to. I don't know what he does with it, but I can tell you for sure...he doesn't use it to
+                        staple paper. Have you seen his reports? What a mess.
+                        <br>
+                        <br>
+                        <br>
+                        For the upcoming company bbq, may I suggest we hold it at my place? The beets are super ripe
+                        this year and I will charge only 2% above cost...yes...they are <strong>THAT</strong> good! Take
+                        a look at the pics!
+                        <br>
+                        <br>
+                        <div class="email-photos">
+                            <div class="beet-tooltip">
+                                <img src="./images/image-not-found.png" alt="Look at how ripe this is!" id="beet-photo">
+                                <h7 class="beet-tooltip-text">Look at how ripe this is!</h7>
+                            </div>
+
+                            <div class="uncle-tooltip">
+                                <img src="./images/image-not-found.png"
+                                    alt="and here is my uncle with the beets.  he's a jerk." id="uncle-photo">
+                                <h7 class="uncle-tooltip-text">and here is my uncle with the beets. He's a jerk.</h7>
+                            </div>
+                        </div>
+                    </em>
+                </p>
             </div>
         </div>
     </div>
+
     <!-- Bootstrap Java cdn insert -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
