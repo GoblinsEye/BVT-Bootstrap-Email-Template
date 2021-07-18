@@ -2,7 +2,6 @@ body, html {
     margin: 0px;
     padding: 0p;
     min-width: 640px;
-    height: 100vh;
 }
 
 .my-container {
@@ -23,6 +22,7 @@ body, html {
     color: white;
     padding-top: 2em;
     padding-bottom: 3em;
+    
 }
 
 .welcome-column2 {
@@ -45,13 +45,24 @@ body, html {
 .email-list-column {
     background-color: rgb(240, 240, 235);
     padding-top: 2em;
-    height: 100vh;
+    
 }
+
+#search-glass {
+    position: relative;
+    height: 1.6em;
+    width: 1.6em;
+    /* border: 1.5px solid black; */
+    border-right: none !important;
+    margin-left: 2.5%;
+}
+
 
 .search-emails {
     margin-bottom: 3em;
-    margin-left: 2.5%;
-    margin-right: 30%;
+    /* border: 1.5px solid black; */
+    border: none;
+    width: 60%;
 }
 
 .email-card {
@@ -59,21 +70,21 @@ body, html {
     margin: .2em;
     width: 95%;
     margin-left: 2.5%;
-    border: 3px solid darkslategray;
     border-radius: 10px;
 }
 
 .linkedin-header {
-    background-color: rgb(241, 241, 203);
+    background-color: rgb(240, 240, 235);
     margin: .2em;
     width: 95%;
     margin-left: 2.5%;
-    border: 5px solid darkslategray;
     border-radius: 10px;
 }
 
 .linkedin-card {
+    font-size: 1.2em;
     font-weight: bold;
+    
 }
 
 .card-body {
@@ -86,7 +97,7 @@ body, html {
 .mscott-email {
     z-index: 5;
     background-color: white;
-    box-shadow: 5px 15px 15px rgb(66, 59, 52);  
+    box-shadow: 5px 5px 5px rgb(66, 59, 52);  
 }
 
 .email-header {
@@ -94,9 +105,14 @@ body, html {
     justify-content: space-between;
 }
 
-.search-emails {
-    margin-top: 2em;
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
+
 
 /* making card text non-underlined */
 a:link {text-decoration: none;}
@@ -105,28 +121,45 @@ a:hover {text-decoration: none;}
 .email-card:hover {
     z-index: 5;
     background-color: white;
-    box-shadow: 5px 15px 15px rgb(66, 59, 52);  
+    box-shadow: 5px 5px 5px rgb(66, 59, 52);  
 }
 
-.linkedin-header:hover {
+/* .linkedin-header:hover {
     z-index: 5;
     background-color: white;
-    box-shadow: 5px 15px 15px rgb(66, 59, 52);  
-}
+    box-shadow: 7px 7px 7px rgb(66, 59, 52);  
+} */
 
 .email-content-column {
     background-color: white;
-    padding-top: 1em;
-    
+    padding-top: 2em;
+    padding-left: 4em;
+    padding-right: 10em;
+    height: 100vh;
 }
 
-h4 {
-    margin: 30px;
+.header-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+
 }
 
-.email-content-header {
+.email-header-buttons {
+    height: 1.2em;
+    width: auto;
+    margin-right: 12px;
+}
+
+.email-to-from {
+    font-size: smaller;
+    margin-bottom: 2.8em;
+}
+
+.email-content-top {
     display: flex;
     justify-content:space-between;
+    padding-left: 0em;
 }
 
 
@@ -154,4 +187,35 @@ h4 {
 
 .uncle-tooltip:hover .uncle-tooltip-text {
     visibility: visible;
+}
+
+.reply-area {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    padding-bottom: 0em;
+    margin-top: 5em;
+    border: 2px solid dimgray;
+    border-radius: 11px;
+    width: 100%;
+    height: 30%;
+}
+
+.email-reply-field {
+    align-items: flex-start;
+    justify-content: left;
+    border: none;
+    height: 95%;
+    margin-bottom: 1.4em;
+}
+
+.reply-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+#attach-icon {
+    height: 48px;
+    width: auto;
 }
