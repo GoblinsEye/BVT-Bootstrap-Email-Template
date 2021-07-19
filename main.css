@@ -154,6 +154,8 @@ a:hover {text-decoration: none;}
 .email-to-from {
     font-size: smaller;
     margin-bottom: 2.8em;
+    display: flex;
+    justify-content: space-between;
 }
 
 .email-content-top {
